@@ -54,6 +54,19 @@ graph TD
   C --> E[MemU API]
 ```
 
+### Primary user flow
+
+Adapted from `.trae/documents/prd-nextjs-chat-timeline-memu.md`:
+
+```mermaid
+graph TD
+  A[Workspace] --> B[Send Message]
+  B --> C[/api/chat streaming]
+  C --> D[Stream tokens into chat]
+  D --> E[Render MemU steps + referenced paths]
+  E --> F[Update timeline panel]
+```
+
 ### `/api/chat` pipeline (observable)
 
 The route always emits streaming data events (in addition to the assistant text), and the UI renders them per assistant message:

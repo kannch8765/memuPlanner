@@ -1,0 +1,174 @@
+{
+  "mem_path": "/mem/raw/time_usage/2025-12-10",
+  "date": "2025-12-10",
+  "events": [
+    {
+      "summary": "💃 ハレエ(中級)",
+      "start": "19:25",
+      "end": "20:10",
+      "category": "Reference/Options",
+      "context": "Potential gym classes, not necessarily attended",
+      "is_recurring": true
+    },
+    {
+      "summary": "🏃 ボディアタック",
+      "start": "18:30",
+      "end": "19:20",
+      "category": "Reference/Options",
+      "context": "Potential gym classes, not necessarily attended",
+      "is_recurring": true
+    },
+    {
+      "summary": "🧘 フローヨガ",
+      "start": "17:30",
+      "end": "18:15",
+      "category": "Reference/Options",
+      "context": "Potential gym classes, not necessarily attended",
+      "is_recurring": true
+    },
+    {
+      "summary": "打合せ_30",
+      "start": "18:45",
+      "end": "20:30",
+      "category": "Commitment",
+      "context": "Mandatory academic classes/meeting",
+      "is_recurring": true
+    },
+    {
+      "summary": "ゼミ_22",
+      "start": "13:00",
+      "end": "14:45",
+      "category": "Commitment",
+      "context": "Mandatory academic classes/meeting",
+      "is_recurring": true
+    },
+    {
+      "summary": "コース_32",
+      "start": "16:50",
+      "end": "18:35",
+      "category": "Commitment",
+      "context": "Mandatory academic classes/meeting",
+      "is_recurring": false
+    },
+    {
+      "summary": "ゼミ_22",
+      "start": "13:00",
+      "end": "14:45",
+      "category": "Commitment",
+      "context": "Mandatory academic classes/meeting",
+      "is_recurring": false
+    },
+    {
+      "summary": "研究室mtg_26",
+      "start": "14:55",
+      "end": "16:40",
+      "category": "Commitment",
+      "context": "Mandatory academic classes/meeting",
+      "is_recurring": true
+    },
+    {
+      "summary": "コース_32",
+      "start": "16:50",
+      "end": "18:35",
+      "category": "Commitment",
+      "context": "Mandatory academic classes/meeting",
+      "is_recurring": true
+    },
+    {
+      "summary": "研究室mtg_26",
+      "start": "14:55",
+      "end": "16:40",
+      "category": "Commitment",
+      "context": "Mandatory academic classes/meeting",
+      "is_recurring": false
+    },
+    {
+      "summary": "打合せ_30",
+      "start": "18:45",
+      "end": "20:30",
+      "category": "Commitment",
+      "context": "Mandatory academic classes/meeting",
+      "is_recurring": false
+    },
+    {
+      "summary": "📕📲 | 46分",
+      "start": "21:14",
+      "end": "22:01",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "✉️連絡 | 8分",
+      "start": "13:03",
+      "end": "13:11",
+      "category": "Passive/Screentime",
+      "context": "chatting over messages with friends and family, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "✉️連絡 | 14分",
+      "start": "18:14",
+      "end": "18:28",
+      "category": "Passive/Screentime",
+      "context": "chatting over messages with friends and family, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "✉️連絡 | 25分",
+      "start": "12:21",
+      "end": "12:46",
+      "category": "Passive/Screentime",
+      "context": "chatting over messages with friends and family, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "✉️連絡 | 1分",
+      "start": "18:03",
+      "end": "18:05",
+      "category": "Passive/Screentime",
+      "context": "chatting over messages with friends and family, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "✉️連絡 | 13分",
+      "start": "19:44",
+      "end": "19:58",
+      "category": "Passive/Screentime",
+      "context": "chatting over messages with friends and family, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "✉️連絡 | 6分",
+      "start": "20:36",
+      "end": "20:42",
+      "category": "Passive/Screentime",
+      "context": "chatting over messages with friends and family, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "✉️連絡 | 1分",
+      "start": "18:59",
+      "end": "19:00",
+      "category": "Passive/Screentime",
+      "context": "chatting over messages with friends and family, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "✉️連絡 | 4分",
+      "start": "18:33",
+      "end": "18:38",
+      "category": "Passive/Screentime",
+      "context": "chatting over messages with friends and family, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "⏰時間確認 | 2分",
+      "start": "13:16",
+      "end": "13:18",
+      "category": "Passive/Screentime",
+      "context": "managing personal tasks and daily planning on notion, auto-tracked",
+      "is_recurring": false
+    }
+  ]
+}

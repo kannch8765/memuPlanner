@@ -1,0 +1,270 @@
+{
+  "mem_path": "/mem/raw/time_usage/2026-01-12",
+  "date": "2026-01-12",
+  "events": [
+    {
+      "summary": "🧘 アシュタンガヨガ",
+      "start": "18:20",
+      "end": "19:05",
+      "category": "Reference/Options",
+      "context": "Potential gym classes, not necessarily attended",
+      "is_recurring": true
+    },
+    {
+      "summary": "🏃 シェイプアップボクシング",
+      "start": "17:30",
+      "end": "18:15",
+      "category": "Reference/Options",
+      "context": "Potential gym classes, not necessarily attended",
+      "is_recurring": true
+    },
+    {
+      "summary": "研究室mtg_26",
+      "start": "13:00",
+      "end": "14:45",
+      "category": "Commitment",
+      "context": "Mandatory academic classes/meeting",
+      "is_recurring": true
+    },
+    {
+      "summary": "講義_20",
+      "start": "12:15",
+      "end": "13:00",
+      "category": "Commitment",
+      "context": "Mandatory academic classes/meeting",
+      "is_recurring": true
+    },
+    {
+      "summary": "講義_02",
+      "start": "16:50",
+      "end": "18:35",
+      "category": "Commitment",
+      "context": "Mandatory academic classes/meeting",
+      "is_recurring": false
+    },
+    {
+      "summary": "講義_02",
+      "start": "16:50",
+      "end": "18:35",
+      "category": "Commitment",
+      "context": "Mandatory academic classes/meeting",
+      "is_recurring": true
+    },
+    {
+      "summary": "研究室mtg_26",
+      "start": "13:00",
+      "end": "14:45",
+      "category": "Commitment",
+      "context": "Mandatory academic classes/meeting",
+      "is_recurring": false
+    },
+    {
+      "summary": "🎮ゲーム | 6分",
+      "start": "10:58",
+      "end": "11:04",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "🎮ゲーム | 23分",
+      "start": "10:29",
+      "end": "10:52",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "📕📲 | 1分",
+      "start": "23:22",
+      "end": "23:24",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "📕📲 | 3時",
+      "start": "18:28",
+      "end": "21:29",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "📕📲 | 1時55分",
+      "start": "13:49",
+      "end": "15:44",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "📕📲 | 35分",
+      "start": "22:17",
+      "end": "22:52",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "🎮ゲーム | 25分",
+      "start": "13:20",
+      "end": "13:45",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "📕📲 | 2分",
+      "start": "17:34",
+      "end": "17:37",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "📕📲 | 20分",
+      "start": "16:03",
+      "end": "16:23",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "📕📲 | 35分",
+      "start": "17:43",
+      "end": "18:18",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "🎮ゲーム | 23分",
+      "start": "12:13",
+      "end": "12:36",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "📕📲 | 3分",
+      "start": "13:45",
+      "end": "13:49",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "📲sns | 6分",
+      "start": "18:19",
+      "end": "18:25",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "📕📲 | 6分",
+      "start": "11:04",
+      "end": "11:11",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "📕📲 | 41分",
+      "start": "11:28",
+      "end": "12:09",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "📲sns | 5分",
+      "start": "10:52",
+      "end": "10:58",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "📕📲 | 18分",
+      "start": "23:46",
+      "end": "00:04",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "🎮ゲーム | 8分",
+      "start": "15:45",
+      "end": "15:54",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "📕📲 | 2分",
+      "start": "02:04",
+      "end": "02:07",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "✉️連絡 | 22分",
+      "start": "23:24",
+      "end": "23:46",
+      "category": "Passive/Screentime",
+      "context": "chatting over messages with friends and family, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "✉️連絡 | 3分",
+      "start": "18:25",
+      "end": "18:28",
+      "category": "Passive/Screentime",
+      "context": "chatting over messages with friends and family, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "✉️連絡 | 19分",
+      "start": "11:11",
+      "end": "11:31",
+      "category": "Passive/Screentime",
+      "context": "chatting over messages with friends and family, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "✉️連絡 | 1分",
+      "start": "17:41",
+      "end": "17:43",
+      "category": "Passive/Screentime",
+      "context": "chatting over messages with friends and family, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "✉️連絡 | 20分",
+      "start": "00:04",
+      "end": "00:25",
+      "category": "Passive/Screentime",
+      "context": "chatting over messages with friends and family, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "⏰時間確認 | 1分",
+      "start": "23:02",
+      "end": "23:03",
+      "category": "Passive/Screentime",
+      "context": "managing personal tasks and daily planning on notion, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "🗃️情報収集 | 1分",
+      "start": "16:01",
+      "end": "16:03",
+      "category": "Deep Work",
+      "context": "Actual focused study time, manually tracked/or auto-tracked",
+      "is_recurring": false
+    }
+  ]
+}

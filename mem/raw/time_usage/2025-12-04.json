@@ -1,0 +1,142 @@
+{
+  "mem_path": "/mem/raw/time_usage/2025-12-04",
+  "date": "2025-12-04",
+  "events": [
+    {
+      "summary": "🏃 シェイプアップ",
+      "start": "17:30",
+      "end": "18:15",
+      "category": "Reference/Options",
+      "context": "Potential gym classes, not necessarily attended",
+      "is_recurring": true
+    },
+    {
+      "summary": "🧘 ピラティス",
+      "start": "12:10",
+      "end": "12:50",
+      "category": "Reference/Options",
+      "context": "Potential gym classes, not necessarily attended",
+      "is_recurring": true
+    },
+    {
+      "summary": "💃 ダンスアベニュー",
+      "start": "18:30",
+      "end": "19:25",
+      "category": "Reference/Options",
+      "context": "Potential gym classes, not necessarily attended",
+      "is_recurring": true
+    },
+    {
+      "summary": "🏃 エアロ(初級)",
+      "start": "19:25",
+      "end": "20:10",
+      "category": "Reference/Options",
+      "context": "Potential gym classes, not necessarily attended",
+      "is_recurring": true
+    },
+    {
+      "summary": "🎮ゲーム | 12分",
+      "start": "14:58",
+      "end": "15:11",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "🎮ゲーム | 2分",
+      "start": "15:53",
+      "end": "15:56",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "📕📲 | 48分",
+      "start": "18:06",
+      "end": "18:55",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "📕📲 | 41分",
+      "start": "13:00",
+      "end": "13:41",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "🎮ゲーム | 1分",
+      "start": "17:56",
+      "end": "17:57",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "📕📲 | 9時36分",
+      "start": "00:16",
+      "end": "09:53",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "📕📲 | 3分",
+      "start": "11:49",
+      "end": "11:53",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "📕📲 | 5分",
+      "start": "10:25",
+      "end": "10:30",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "✉️連絡 | 32分",
+      "start": "09:53",
+      "end": "10:25",
+      "category": "Passive/Screentime",
+      "context": "chatting over messages with friends and family, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "✉️連絡 | 11時24分",
+      "start": "20:28",
+      "end": "07:53",
+      "category": "Passive/Screentime",
+      "context": "chatting over messages with friends and family, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "✉️連絡 | 6分",
+      "start": "19:20",
+      "end": "19:26",
+      "category": "Passive/Screentime",
+      "context": "chatting over messages with friends and family, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "✉️連絡 | 10分",
+      "start": "20:18",
+      "end": "20:28",
+      "category": "Passive/Screentime",
+      "context": "chatting over messages with friends and family, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "✉️連絡 | 12分",
+      "start": "12:17",
+      "end": "12:29",
+      "category": "Passive/Screentime",
+      "context": "chatting over messages with friends and family, auto-tracked",
+      "is_recurring": false
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "mem_path": "/mem/raw/time_usage/2025-10-19",
+  "date": "2025-10-19",
+  "events": [
+    {
+      "summary": "📲sns | 22分",
+      "start": "11:27",
+      "end": "11:50",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "📲sns | 1分",
+      "start": "07:50",
+      "end": "07:52",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "🎮ゲーム | 1時52分",
+      "start": "13:07",
+      "end": "14:59",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "🎮ゲーム | 1時8分",
+      "start": "11:58",
+      "end": "13:07",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "🎮ゲーム | 19分",
+      "start": "10:28",
+      "end": "10:48",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "🎮ゲーム | 18分",
+      "start": "00:07",
+      "end": "00:26",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "🎮ゲーム | 6時49分",
+      "start": "14:59",
+      "end": "21:48",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "📲sns | 2分",
+      "start": "21:19",
+      "end": "21:22",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "✉️連絡 | 2分",
+      "start": "11:20",
+      "end": "11:22",
+      "category": "Passive/Screentime",
+      "context": "chatting over messages with friends and family, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "✉️連絡 | 7分",
+      "start": "11:50",
+      "end": "11:58",
+      "category": "Passive/Screentime",
+      "context": "chatting over messages with friends and family, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "✉️連絡 | 1分",
+      "start": "00:06",
+      "end": "00:07",
+      "category": "Passive/Screentime",
+      "context": "chatting over messages with friends and family, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "✉️連絡 | 2分",
+      "start": "09:16",
+      "end": "09:19",
+      "category": "Passive/Screentime",
+      "context": "chatting over messages with friends and family, auto-tracked",
+      "is_recurring": false
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "mem_path": "/mem/raw/time_usage/2025-10-12",
+  "date": "2025-10-12",
+  "events": [
+    {
+      "summary": "🎮ゲーム | 35分",
+      "start": "03:44",
+      "end": "04:20",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "📲sns | 12分",
+      "start": "13:22",
+      "end": "13:35",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "📲sns | 31分",
+      "start": "11:43",
+      "end": "12:14",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "✉️連絡 | 9時4分",
+      "start": "13:52",
+      "end": "22:56",
+      "category": "Passive/Screentime",
+      "context": "chatting over messages with friends and family, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "✉️連絡 | 6分",
+      "start": "13:45",
+      "end": "13:52",
+      "category": "Passive/Screentime",
+      "context": "chatting over messages with friends and family, auto-tracked",
+      "is_recurring": false
+    }
+  ]
+}

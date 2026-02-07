@@ -1,0 +1,62 @@
+{
+  "mem_path": "/mem/raw/time_usage/2025-12-14",
+  "date": "2025-12-14",
+  "events": [
+    {
+      "summary": "🎮ゲーム | 16分",
+      "start": "11:36",
+      "end": "11:53",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "📲sns | 1分",
+      "start": "11:10",
+      "end": "11:11",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "🎮ゲーム | 8分",
+      "start": "13:47",
+      "end": "13:55",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "📕📲 | 2時2分",
+      "start": "09:19",
+      "end": "11:22",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "📕📲 | 2分",
+      "start": "13:39",
+      "end": "13:41",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "✉️連絡 | 1分",
+      "start": "11:35",
+      "end": "11:36",
+      "category": "Passive/Screentime",
+      "context": "chatting over messages with friends and family, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "🗃️情報収集 | 1分",
+      "start": "11:16",
+      "end": "11:17",
+      "category": "Deep Work",
+      "context": "Actual focused study time, manually tracked/or auto-tracked",
+      "is_recurring": false
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "mem_path": "/mem/raw/time_usage/2025-12-13",
+  "date": "2025-12-13",
+  "events": [
+    {
+      "summary": "🧘 ヨガ",
+      "start": "18:10",
+      "end": "19:00",
+      "category": "Reference/Options",
+      "context": "Potential gym classes, not necessarily attended",
+      "is_recurring": true
+    },
+    {
+      "summary": "見学_12",
+      "start": "09:00",
+      "end": "09:00",
+      "category": "Commitment",
+      "context": "Mandatory organizational meetings",
+      "is_recurring": false
+    },
+    {
+      "summary": "📕📲 | 7分",
+      "start": "11:44",
+      "end": "11:51",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "📕📲 | 2時53分",
+      "start": "18:04",
+      "end": "20:58",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "📕📲 | 23分",
+      "start": "15:37",
+      "end": "16:00",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "📕📲 | 32分",
+      "start": "17:31",
+      "end": "18:04",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "📕📲 | 13分",
+      "start": "10:55",
+      "end": "11:09",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "✉️連絡 | 23分",
+      "start": "10:32",
+      "end": "10:55",
+      "category": "Passive/Screentime",
+      "context": "chatting over messages with friends and family, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "✉️連絡 | 10分",
+      "start": "17:25",
+      "end": "17:35",
+      "category": "Passive/Screentime",
+      "context": "chatting over messages with friends and family, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "✉️連絡 | 11時58分",
+      "start": "21:20",
+      "end": "09:19",
+      "category": "Passive/Screentime",
+      "context": "chatting over messages with friends and family, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "✉️連絡 | 1分",
+      "start": "12:08",
+      "end": "12:09",
+      "category": "Passive/Screentime",
+      "context": "chatting over messages with friends and family, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "✉️連絡 | 3分",
+      "start": "10:02",
+      "end": "10:06",
+      "category": "Passive/Screentime",
+      "context": "chatting over messages with friends and family, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "✉️連絡 | 14分",
+      "start": "21:05",
+      "end": "21:20",
+      "category": "Passive/Screentime",
+      "context": "chatting over messages with friends and family, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "⏰時間確認 | 29分",
+      "start": "13:32",
+      "end": "14:01",
+      "category": "Passive/Screentime",
+      "context": "managing personal tasks and daily planning on notion, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "⏰時間確認 | 1時9分",
+      "start": "12:17",
+      "end": "13:27",
+      "category": "Passive/Screentime",
+      "context": "managing personal tasks and daily planning on notion, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "⏰時間確認 | 1時22分",
+      "start": "14:14",
+      "end": "15:37",
+      "category": "Passive/Screentime",
+      "context": "managing personal tasks and daily planning on notion, auto-tracked",
+      "is_recurring": false
+    }
+  ]
+}

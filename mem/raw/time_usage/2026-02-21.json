@@ -1,0 +1,22 @@
+{
+  "mem_path": "/mem/raw/time_usage/2026-02-21",
+  "date": "2026-02-21",
+  "events": [
+    {
+      "summary": "🧘 ヨガ",
+      "start": "18:10",
+      "end": "19:00",
+      "category": "Reference/Options",
+      "context": "Potential gym classes, not necessarily attended",
+      "is_recurring": true
+    },
+    {
+      "summary": "委員会_20",
+      "start": "09:00",
+      "end": "09:00",
+      "category": "Commitment",
+      "context": "Mandatory organizational meetings",
+      "is_recurring": false
+    }
+  ]
+}

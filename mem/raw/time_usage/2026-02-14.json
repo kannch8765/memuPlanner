@@ -1,0 +1,14 @@
+{
+  "mem_path": "/mem/raw/time_usage/2026-02-14",
+  "date": "2026-02-14",
+  "events": [
+    {
+      "summary": "🧘 ヨガ",
+      "start": "18:10",
+      "end": "19:00",
+      "category": "Reference/Options",
+      "context": "Potential gym classes, not necessarily attended",
+      "is_recurring": true
+    }
+  ]
+}

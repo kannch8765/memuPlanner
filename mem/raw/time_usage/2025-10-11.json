@@ -1,0 +1,70 @@
+{
+  "mem_path": "/mem/raw/time_usage/2025-10-11",
+  "date": "2025-10-11",
+  "events": [
+    {
+      "summary": "委員会_16",
+      "start": "13:00",
+      "end": "15:00",
+      "category": "Commitment",
+      "context": "Mandatory organizational meetings",
+      "is_recurring": false
+    },
+    {
+      "summary": "📲sns | 5分",
+      "start": "00:47",
+      "end": "00:53",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "📲sns | 3分",
+      "start": "11:19",
+      "end": "11:22",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "📲sns | 1分",
+      "start": "20:08",
+      "end": "20:10",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "📲sns | 1時4分",
+      "start": "13:45",
+      "end": "14:49",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "📲sns | 3分",
+      "start": "12:31",
+      "end": "12:35",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "🎮ゲーム | 14分",
+      "start": "00:54",
+      "end": "01:08",
+      "category": "Passive/Screentime",
+      "context": "Social media and mobile games, auto-tracked",
+      "is_recurring": false
+    },
+    {
+      "summary": "✉️連絡 | 19分",
+      "start": "12:12",
+      "end": "12:31",
+      "category": "Passive/Screentime",
+      "context": "chatting over messages with friends and family, auto-tracked",
+      "is_recurring": false
+    }
+  ]
+}

@@ -8,10 +8,14 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "sync:mem:layer1": "node scripts/sync-mem-layer1.mjs",
+    "extract:insights": "node scripts/extract-insights.mjs",
+    "sync:mem": "npm run sync:mem:layer1",
+    "build:sentiment": "node scripts/build-sentiment.mjs"
   },
   "dependencies": {
-    "@ai-sdk/openai": "^1.3.0",
+    "@ai-sdk/groq": "^1.2.9",
     "ai": "^4.3.0",
     "clsx": "^2.1.1",
     "lucide-react": "^0.474.0",

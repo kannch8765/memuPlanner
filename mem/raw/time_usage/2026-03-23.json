@@ -1,0 +1,14 @@
+{
+  "mem_path": "/mem/raw/time_usage/2026-03-23",
+  "date": "2026-03-23",
+  "events": [
+    {
+      "summary": "講義_20",
+      "start": "12:15",
+      "end": "13:00",
+      "category": "Commitment",
+      "context": "Mandatory academic classes/meeting",
+      "is_recurring": true
+    }
+  ]
+}

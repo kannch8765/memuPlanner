@@ -1,0 +1,46 @@
+{
+  "mem_path": "/mem/raw/time_usage/2026-02-17",
+  "date": "2026-02-17",
+  "events": [
+    {
+      "summary": "🏃 エアロ(初級)",
+      "start": "17:30",
+      "end": "18:15",
+      "category": "Reference/Options",
+      "context": "Potential gym classes, not necessarily attended",
+      "is_recurring": true
+    },
+    {
+      "summary": "🧘 やさしいYoga",
+      "start": "12:10",
+      "end": "12:50",
+      "category": "Reference/Options",
+      "context": "Potential gym classes, not necessarily attended",
+      "is_recurring": true
+    },
+    {
+      "summary": "🧘 ヨガ",
+      "start": "19:20",
+      "end": "20:05",
+      "category": "Reference/Options",
+      "context": "Potential gym classes, not necessarily attended",
+      "is_recurring": true
+    },
+    {
+      "summary": "🧘 アロマヨガ",
+      "start": "18:25",
+      "end": "19:10",
+      "category": "Reference/Options",
+      "context": "Potential gym classes, not necessarily attended",
+      "is_recurring": true
+    },
+    {
+      "summary": "講義_24",
+      "start": "19:00",
+      "end": "20:30",
+      "category": "Commitment",
+      "context": "Mandatory academic classes/meeting",
+      "is_recurring": true
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "mem_path": "/mem/raw/time_usage/2026-03-05",
+  "date": "2026-03-05",
+  "events": [
+    {
+      "summary": "○○ウェビナー_23",
+      "start": "09:00",
+      "end": "09:00",
+      "category": "Commitment",
+      "context": "Mandatory organizational meetings",
+      "is_recurring": false
+    }
+  ]
+}

@@ -128,20 +128,58 @@ export function buildSentimentConversation(nowIso: string): MemUMessage[] {
   ]
 }
 
-export async function memorizeChatTurn(userId: string, latestUserText: string, latestAssistantText: string): Promise<void> {
+export type MemorizeChatTurnResult =
+  | { ok: true; memPath: string }
+  | { ok: false; memPath: string; error: string }
+
+export async function memorizeChatTurn(userId: string, latestUserText: string, latestAssistantText: string): Promise<MemorizeChatTurnResult> {
+  const ts = String(Date.now())
+  const memPath = `/mem/sentiment/chat/${ts}`
+
   try {
     const memu = memuFromEnv()
     const now = new Date().toISOString()
     const conversation: MemUMessage[] = [
-      { role: 'user', created_at: now, content: latestUserText },
-      { role: 'assistant', created_at: now, content: latestAssistantText },
-      { role: 'user', created_at: now, content: 'Please remember this planning conversation for future advice.' },
+      { role: 'user', created_at: now, content: `Put ${memPath}. Save this chat input for future planning.` },
+      { role: 'assistant', created_at: now, content: 'Understood. I will store this chat memory.' },
+      { role: 'user', created_at: now, content: JSON.stringify({ mem_path: memPath, timestamp: now, user: latestUserText, assistant: latestAssistantText, source: 'live_chat' }) },
     ]
 
     await memorizeWithWait({ userId, agentId: LAYER_AGENT.sentiment, conversation })
-  } catch {
-    return
+    return { ok: true, memPath }
+  } catch (e: any) {
+    return { ok: false, memPath, error: String(e?.message ?? e ?? 'Unknown error') }
   }
+}
+
+export type MemoryWriteDecision = {
+  shouldWrite: boolean
+  label: string
+}
+
+export function decideLayer3WriteFromUserText(text: string): MemoryWriteDecision {
+  const t = text.trim()
+  if (!t) return { shouldWrite: false, label: 'Empty message' }
+
+  const looksQuestion = /\?|^(what|when|where|why|how|can you|could you|would you|please)\b/i.test(t)
+  if (looksQuestion) return { shouldWrite: false, label: 'Clarification / question' }
+
+  const emotionMarkers = [
+    /\b(i\s+feel|i\s+felt|i\s+regret|i\s+was\s+happy|i\s+am\s+happy|i\s+was\s+sad|i\s+am\s+sad|i\s+was\s+stressed|i\s+am\s+stressed|i\s+was\s+anxious|i\s+am\s+anxious|i\s+was\s+proud|i\s+am\s+proud)\b/i,
+    /(嬉しい|悲しい|つらい|疲れた|しんどい|後悔|イライラ|不安|焦り|落ち込|達成感|満足|うれしかった|楽しかった)/,
+  ]
+  if (emotionMarkers.some((re) => re.test(t))) return { shouldWrite: true, label: 'Reflection / emotion' }
+
+  const constraintMarkers = [
+    /\b(i have|i've got|i need to|i must|tomorrow|today|at \d{1,2}(:\d{2})?|meeting|appointment|deadline|call)\b/i,
+    /(会議|ミーティング|予定|締切|打ち合わせ|通院|面談|出社|帰宅|\d{1,2}時(\d{1,2}分)?)/,
+  ]
+  if (constraintMarkers.some((re) => re.test(t))) return { shouldWrite: false, label: 'Constraint / planning info' }
+
+  const reflectiveTone = /\b(today|tonight|yesterday|lately)\b/i.test(t) && /\b(i|my)\b/i.test(t)
+  if (reflectiveTone) return { shouldWrite: true, label: 'Reflection (non-emotional)' }
+
+  return { shouldWrite: false, label: 'Default: do not write' }
 }
 
 async function memorizeWithWait(params: { userId: string; agentId: string; conversation: MemUMessage[] }): Promise<void> {

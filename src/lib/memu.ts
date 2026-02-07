@@ -71,36 +71,101 @@ export class MemUClient {
   }
 
   private async get(path: string): Promise<any> {
-    const res = await fetch(`${this.baseUrl}${path}`, {
-      method: 'GET',
-      headers: {
-        Authorization: `Bearer ${this.apiKey}`,
-      },
-    })
-
-    if (!res.ok) {
-      const text = await res.text().catch(() => '')
-      throw new Error(`MemU GET ${path} failed: ${res.status} ${text}`)
-    }
-    return res.json()
+    return this.request({ method: 'GET', path })
   }
 
   private async post(path: string, body: any): Promise<any> {
-    const res = await fetch(`${this.baseUrl}${path}`, {
-      method: 'POST',
-      headers: {
-        Authorization: `Bearer ${this.apiKey}`,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(body),
-    })
-
-    if (!res.ok) {
-      const text = await res.text().catch(() => '')
-      throw new Error(`MemU POST ${path} failed: ${res.status} ${text}`)
-    }
-    return res.json()
+    return this.request({ method: 'POST', path, body })
   }
+
+  private async request(params: { method: 'GET' | 'POST'; path: string; body?: any }): Promise<any> {
+    const maxAttempts = 5
+    let lastErr: unknown
+
+    for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+      try {
+        const res = await fetch(`${this.baseUrl}${params.path}`, {
+          method: params.method,
+          headers: {
+            Authorization: `Bearer ${this.apiKey}`,
+            ...(params.method === 'POST' ? { 'Content-Type': 'application/json' } : {}),
+          },
+          ...(params.method === 'POST' ? { body: JSON.stringify(params.body) } : {}),
+        })
+
+        if (res.ok) return res.json()
+
+        const text = await res.text().catch(() => '')
+        const retryable = isRetryableStatus(res.status)
+        if (retryable && attempt < maxAttempts) {
+          const waitMs = computeBackoffMs({
+            attempt,
+            retryAfter: res.headers.get('retry-after'),
+            hintText: text,
+          })
+          await sleep(waitMs)
+          continue
+        }
+
+        throw new Error(`${params.method} ${params.path} failed: ${res.status} ${summarizeHttpBody(text)}`)
+      } catch (e) {
+        lastErr = e
+        const msg = String((e as any)?.message ?? e)
+        const retryable = /fetch failed|network|ECONNRESET|ETIMEDOUT|EAI_AGAIN|ENOTFOUND/i.test(msg)
+        if (retryable && attempt < maxAttempts) {
+          await sleep(computeBackoffMs({ attempt }))
+          continue
+        }
+        break
+      }
+    }
+
+    const msg = String((lastErr as any)?.message ?? lastErr ?? 'Unknown error')
+    throw new Error(`MemU ${params.method} ${params.path} failed after retries: ${msg}`)
+  }
+}
+
+function isRetryableStatus(status: number): boolean {
+  return status === 408 || status === 429 || status === 500 || status === 502 || status === 503 || status === 504
+}
+
+function summarizeHttpBody(text: string): string {
+  const t = String(text || '').replace(/\s+/g, ' ').trim()
+  if (!t) return '(empty response)'
+  const m = t.match(/<title>([^<]+)<\/title>/i)
+  const title = m?.[1]?.trim()
+  const cleaned = title ? `HTML: ${title}` : t
+  return cleaned.length > 240 ? `${cleaned.slice(0, 240)}…` : cleaned
+}
+
+function computeBackoffMs(params: { attempt: number; retryAfter?: string | null; hintText?: string }): number {
+  const retryAfterSeconds = parseRetryAfterSeconds(params.retryAfter)
+  if (retryAfterSeconds !== null) return Math.min(30_000, retryAfterSeconds * 1000)
+
+  const hintSeconds = parseRetrySecondsFromBody(params.hintText)
+  if (hintSeconds !== null) return Math.min(30_000, hintSeconds * 1000)
+
+  const base = Math.min(8000, 400 * 2 ** (params.attempt - 1))
+  const jitter = Math.floor(Math.random() * 250)
+  return base + jitter
+}
+
+function parseRetryAfterSeconds(value: string | null | undefined): number | null {
+  if (!value) return null
+  const n = Number(value)
+  return Number.isFinite(n) && n >= 0 ? n : null
+}
+
+function parseRetrySecondsFromBody(text: string | undefined): number | null {
+  if (!text) return null
+  const m = text.match(/try again in\s+([0-9.]+)s/i)
+  if (!m) return null
+  const v = Number(m[1])
+  return Number.isFinite(v) && v >= 0 ? v : null
+}
+
+function sleep(ms: number): Promise<void> {
+  return new Promise((r) => setTimeout(r, ms))
 }
 
 export function memuFromEnv(): MemUClient {
@@ -109,4 +174,3 @@ export function memuFromEnv(): MemUClient {
   if (!apiKey) throw new Error('Missing MEMU_API_KEY')
   return new MemUClient({ apiKey, baseUrl })
 }
-

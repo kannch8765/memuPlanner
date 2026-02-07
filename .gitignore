@@ -16,4 +16,4 @@ yarn-error.log*
 pnpm-debug.log*
 
 .vercel
-.trae/skills/memu
+.trae/skills/memu/SKILL.md
